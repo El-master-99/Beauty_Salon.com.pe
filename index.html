@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jhesly Romero Beauty Salon - Servicios de belleza profesional: peinados, manicura, pedicura, tratamientos faciales y productos de belleza">
+    <meta name="keywords" content="salon de belleza, peinados, manicura, pedicura, tratamiento facial, belleza, cosmetología">
+    <title>Jhesly Romero Beauty Salon | Peinados, Manicura, Facial</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links-left">
+                <a href="#hero" class="nav-link">Inicio</a>
+                <a href="#services" class="nav-link">Servicios</a>
+            </div>
+            
+            <a href="#hero" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="scissors"></i>
+                </div>
+                <span class="logo-text">Jhesly Romero</span>
+            </a>
+            
+            <div class="nav-links-right">
+                <a href="#products" class="nav-link">Productos</a>
+                <a href="#gallery" class="nav-link">Galería</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </div>
+            
+            <a href="#booking" class="btn-primary nav-btn">Reservar</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero" class="mobile-link">Inicio</a>
+        <a href="#services" class="mobile-link">Servicios</a>
+        <a href="#products" class="mobile-link">Productos</a>
+        <a href="#gallery" class="mobile-link">Galería</a>
+        <a href="#contact" class="mobile-link">Contacto</a>
+        <a href="#booking" class="btn-primary mobile-btn">Reservar Cita</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles"></i>
+                    <span>Bienvenida a tu espacio de belleza</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Tu belleza, <span class="text-primary italic">nuestra pasión</span>
+                </h1>
+                
+                <p class="hero-description">
+                    En Jhesly Romero Beauty Salon transformamos tu imagen con servicios de alta calidad en peinados, manicura, pedicura y tratamientos faciales. Déjate consentir por expertas en belleza.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn-primary">Reservar Cita</a>
+                    <a href="#services" class="btn-secondary">Ver Servicios</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Clientas felices</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Servicios únicos</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <div class="hero-decoration-1"></div>
+                <div class="hero-decoration-2"></div>
+                <div class="hero-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1675881149187-8faaf934e14a" alt="Jhesly Romero Beauty Salon" class="hero-image">
+                    <div class="hero-gradient"></div>
+                </div>
+                <div class="hero-floating-badge">
+                    <div class="badge-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <div class="badge-text">
+                        <span class="badge-title">Beauty Salon</span>
+                        <span class="badge-subtitle">Premium Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nuestros Servicios</span>
+                <h2 class="section-title">Servicios de <span class="italic">belleza</span> profesional</h2>
+                <p class="section-description">Ofrecemos una amplia gama de tratamientos de belleza para realzar tu imagen natural. Cada servicio está diseñado con atención al detalle.</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="categories">
+                <div class="category">
+                    <div class="category-icon"><i data-lucide="scissors"></i></div>
+                    <span>Cabello</span>
+                </div>
+                <div class="category">
+                    <div class="category-icon"><i data-lucide="hand"></i></div>
+                    <span>Uñas</span>
+                </div>
+                <div class="category">
+                    <div class="category-icon"><i data-lucide="sparkles"></i></div>
+                    <span>Facial</span>
+                </div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1560869713-da86a9ec0744" alt="Corte de Cabello">
+                        <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    </div>
+                    <h3 class="service-name">Corte de Cabello</h3>
+                    <p class="service-description">Corte profesional adaptado a tu estilo y tipo de rostro</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.25.00</span>
+                        <span class="service-duration">45 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="Peinado Especial">
+                        <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    </div>
+                    <h3 class="service-name">Peinado Especial</h3>
+                    <p class="service-description">Peinados elegantes para eventos especiales y ocasiones únicas</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.45.00</span>
+                        <span class="service-duration">60 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df" alt="Coloración">
+                        <div class="service-icon"><i data-lucide="scissors"></i></div>
+                    </div>
+                    <h3 class="service-name">Coloración</h3>
+                    <p class="service-description">Tintes, mechas y balayage con productos de primera calidad</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.80.00</span>
+                        <span class="service-duration">120 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371" alt="Manicura Clásica">
+                        <div class="service-icon"><i data-lucide="hand"></i></div>
+                    </div>
+                    <h3 class="service-name">Manicura Clásica</h3>
+                    <p class="service-description">Limado, cutículas, esmaltado y cuidado completo de manos</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.20.00</span>
+                        <span class="service-duration">30 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b" alt="Manicura Gel">
+                        <div class="service-icon"><i data-lucide="hand"></i></div>
+                    </div>
+                    <h3 class="service-name">Manicura Gel</h3>
+                    <p class="service-description">Uñas en gel con diseños personalizados y larga duración</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.35.00</span>
+                        <span class="service-duration">45 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937" alt="Pedicura Spa">
+                        <div class="service-icon"><i data-lucide="hand"></i></div>
+                    </div>
+                    <h3 class="service-name">Pedicura Spa</h3>
+                    <p class="service-description">Tratamiento completo de pies con exfoliación y masaje relajante</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.40.00</span>
+                        <span class="service-duration">60 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 7 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881" alt="Limpieza Facial">
+                        <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    </div>
+                    <h3 class="service-name">Limpieza Facial</h3>
+                    <p class="service-description">Limpieza profunda con extracción y mascarilla hidratante</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.50.00</span>
+                        <span class="service-duration">60 min</span>
+                    </div>
+                </div>
+                
+                <!-- Servicio 8 -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2" alt="Tratamiento Anti-edad">
+                        <div class="service-icon"><i data-lucide="sparkles"></i></div>
+                    </div>
+                    <h3 class="service-name">Tratamiento Anti-edad</h3>
+                    <p class="service-description">Rejuvenecimiento facial con productos premium y tecnología avanzada</p>
+                    <div class="service-footer">
+                        <span class="service-price">S/.90.00</span>
+                        <span class="service-duration">90 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS SECTION -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tienda de Belleza</span>
+                <h2 class="section-title">Productos <span class="italic">premium</span> para ti</h2>
+                <p class="section-description">Descubre nuestra selección de productos de belleza de alta calidad para mantener tu rutina de cuidado en casa.</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be" alt="Sérum Vitamina C">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cuidado Facial</span>
+                        <h3 class="product-name">Sérum Vitamina C</h3>
+                        <p class="product-description">Sérum iluminador con vitamina C pura para un rostro radiante</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.45.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571" alt="Crema Hidratante">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cuidado Facial</span>
+                        <h3 class="product-name">Crema Hidratante</h3>
+                        <p class="product-description">Hidratación profunda 24h con ácido hialurónico</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.38.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f" alt="Mascarilla Capilar">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cabello</span>
+                        <h3 class="product-name">Mascarilla Capilar</h3>
+                        <p class="product-description">Tratamiento intensivo para cabello dañado con keratina</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.28.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b" alt="Aceite de Argán">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cabello</span>
+                        <h3 class="product-name">Aceite de Argán</h3>
+                        <p class="product-description">Aceite 100% puro para nutrición capilar y corporal</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.32.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1585128792020-803d29415281" alt="Esmalte Premium">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Uñas</span>
+                        <h3 class="product-name">Esmalte Premium</h3>
+                        <p class="product-description">Esmalte de larga duración con acabado brillante</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.12.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03" alt="Kit de Cuidado Facial">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Cuidado Facial</span>
+                        <h3 class="product-name">Kit de Cuidado Facial</h3>
+                        <p class="product-description">Set completo: limpiador, tónico, sérum y crema</p>
+                        <div class="product-footer">
+                            <span class="product-price">S/.89.00</span>
+                            <button class="product-btn"><i data-lucide="shopping-bag"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-cta">
+                <p>¿Necesitas asesoría sobre qué productos usar?</p>
+                <a href="#contact" class="btn-secondary">Contáctanos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA SECTION -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nuestro Trabajo</span>
+                <h2 class="section-title">Galería de <span class="italic">transformaciones</span></h2>
+                <p class="section-description">Explora nuestros trabajos más destacados y déjate inspirar por las transformaciones que hemos logrado.</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e" alt="Peinado Elegante">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Peinado Elegante</span>
+                        <span class="gallery-category">Cabello</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1599316329891-19df7fa9580d" alt="Coloración Natural">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Coloración Natural</span>
+                        <span class="gallery-category">Cabello</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371" alt="Nail Art">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Nail Art</span>
+                        <span class="gallery-category">Uñas</span>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="https://images.unsplash.com/photo-1560869713-da86a9ec0744" alt="Balayage">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Balayage</span>
+                        <span class="gallery-category">Cabello</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881" alt="Tratamiento Facial">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Tratamiento Facial</span>
+                        <span class="gallery-category">Facial</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df" alt="Peinado Novia">
+                    <div class="gallery-overlay">
+                        <span class="gallery-title">Peinado Novia</span>
+                        <span class="gallery-category">Cabello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVAS SECTION -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Agenda tu Cita</span>
+                <h2 class="section-title">Reserva tu <span class="italic">momento</span> de belleza</h2>
+                <p class="section-description">Selecciona el servicio, fecha y hora que prefieras. Nos pondremos en contacto contigo para confirmar tu cita.</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <!-- Steps -->
+            <div class="booking-steps">
+                <div class="step active" data-step="1">1</div>
+                <div class="step-line"></div>
+                <div class="step" data-step="2">2</div>
+                <div class="step-line"></div>
+                <div class="step" data-step="3">3</div>
+            </div>
+            
+            <div class="booking-form-container">
+                <form id="bookingForm" class="booking-form">
+                    <!-- Step 1 -->
+                    <div class="form-step active" id="step1">
+                        <div class="step-header">
+                            <div class="step-icon"><i data-lucide="calendar-days"></i></div>
+                            <div>
+                                <h3>Selecciona un servicio</h3>
+                                <p>Elige el tratamiento que deseas</p>
+                            </div>
+                        </div>
+                        
+                        <select id="serviceSelect" class="form-input" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="corte">Corte de Cabello - S/.25.00 (45 min)</option>
+                            <option value="peinado">Peinado Especial - S/.45.00 (60 min)</option>
+                            <option value="coloracion">Coloración - S/.80.00 (120 min)</option>
+                            <option value="manicura">Manicura Clásica - S/.20.00 (30 min)</option>
+                            <option value="manicura-gel">Manicura Gel - S/.35.00 (45 min)</option>
+                            <option value="pedicura">Pedicura Spa - S/.40.00 (60 min)</option>
+                            <option value="facial">Limpieza Facial - S/.50.00 (60 min)</option>
+                            <option value="antiedad">Tratamiento Anti-edad - S/.90.00 (90 min)</option>
+                        </select>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn-primary" onclick="nextStep(2)">Siguiente</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="form-step" id="step2">
+                        <div class="step-header">
+                            <div class="step-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <h3>Fecha y hora</h3>
+                                <p>Elige cuándo te gustaría venir</p>
+                            </div>
+                        </div>
+                        
+                        <div class="date-time-grid">
+                            <div class="date-picker">
+                                <label>Selecciona fecha</label>
+                                <input type="date" id="dateInput" class="form-input" required>
+                            </div>
+                            
+                            <div class="time-picker">
+                                <label>Selecciona hora</label>
+                                <div class="time-slots">
+                                    <button type="button" class="time-slot" data-time="09:00">09:00</button>
+                                    <button type="button" class="time-slot" data-time="09:30">09:30</button>
+                                    <button type="button" class="time-slot" data-time="10:00">10:00</button>
+                                    <button type="button" class="time-slot" data-time="10:30">10:30</button>
+                                    <button type="button" class="time-slot" data-time="11:00">11:00</button>
+                                    <button type="button" class="time-slot" data-time="11:30">11:30</button>
+                                    <button type="button" class="time-slot" data-time="12:00">12:00</button>
+                                    <button type="button" class="time-slot" data-time="14:00">14:00</button>
+                                    <button type="button" class="time-slot" data-time="14:30">14:30</button>
+                                    <button type="button" class="time-slot" data-time="15:00">15:00</button>
+                                    <button type="button" class="time-slot" data-time="15:30">15:30</button>
+                                    <button type="button" class="time-slot" data-time="16:00">16:00</button>
+                                    <button type="button" class="time-slot" data-time="16:30">16:30</button>
+                                    <button type="button" class="time-slot" data-time="17:00">17:00</button>
+                                    <button type="button" class="time-slot" data-time="17:30">17:30</button>
+                                    <button type="button" class="time-slot" data-time="18:00">18:00</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <input type="hidden" id="selectedTime" name="selectedTime">
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn-secondary" onclick="prevStep(1)">Atrás</button>
+                            <button type="button" class="btn-primary" onclick="nextStep(3)">Siguiente</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="form-step" id="step3">
+                        <div class="step-header">
+                            <div class="step-icon"><i data-lucide="check-circle"></i></div>
+                            <div>
+                                <h3>Tus datos</h3>
+                                <p>Completa tu información de contacto</p>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-summary" id="bookingSummary">
+                            <!-- Se llena con JavaScript -->
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Nombre completo *</label>
+                                <input type="text" id="clientName" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono *</label>
+                                <input type="tel" id="clientPhone" class="form-input" placeholder="+51 937007370" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" id="clientEmail" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Notas adicionales</label>
+                            <textarea id="clientNotes" class="form-input form-textarea" placeholder="¿Alguna preferencia o comentario?"></textarea>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="button" class="btn-secondary" onclick="prevStep(2)">Atrás</button>
+                            <button type="submit" class="btn-primary">Confirmar Reserva</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Success -->
+                    <div class="form-step" id="stepSuccess">
+                        <div class="success-message">
+                            <div class="success-icon">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                            <h2>¡Reserva Confirmada!</h2>
+                            <p id="successText">Hemos recibido tu solicitud de cita.</p>
+                            <p class="success-note">Te contactaremos pronto para confirmar tu cita.</p>
+                            <button type="button" class="btn-primary" onclick="resetForm()">Hacer otra reserva</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contáctanos</span>
+                <h2 class="section-title">Estamos aquí para <span class="italic">ti</span></h2>
+                <p class="section-description">¿Tienes alguna pregunta o deseas más información? No dudes en contactarnos. Estaremos encantadas de atenderte.</p>
+                <div class="decorative-line"></div>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Av. Principal 123, Centro</p>
+                                <span>Ciudad de México, México</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+51 937007370</p>
+                                <span>WhatsApp disponible</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hola@jheslyromero.com</p>
+                                <span>Respuesta en 24h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lun - Sáb: 9:00 - 19:00</p>
+                                <span>Domingos cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.8489193132995!2d-75.20729067261601!3d-12.072206629251163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9651f55a8b31%3A0x7bcc0e1ffee0e469!2sJr.%20Cajamarca%20345%2C%20Huancayo%2012001!5e0!3m2!1ses!2spe!4v1770614748953!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label>Nombre *</label>
+                            <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" class="form-input" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-input" placeholder="+51 937007370">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Mensaje *</label>
+                            <textarea class="form-input form-textarea" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i data-lucide="scissors"></i></div>
+                        <div>
+                            <span class="logo-name">Jhesly Romero</span>
+                            <span class="logo-subtitle">Beauty Salon</span>
+                        </div>
+                    </div>
+                    <p>Tu destino de belleza donde transformamos tu imagen con servicios de alta calidad y productos premium.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-link">IG</a>
+                        <a href="https://facebook.com" target="_blank" class="social-link">FB</a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">TW</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#services">Corte de Cabello</a></li>
+                        <li><a href="#services">Coloración</a></li>
+                        <li><a href="#services">Manicura</a></li>
+                        <li><a href="#services">Pedicura</a></li>
+                        <li><a href="#services">Tratamiento Facial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#hero">Sobre Nosotros</a></li>
+                        <li><a href="#gallery">Galería</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><strong>Dirección:</strong><br>Av. Principal 123, Centro<br>Ciudad de México, México</p>
+                    <p><strong>Teléfono:</strong><br>+51 937007370</p>
+                    <p><strong>Email:</strong><br>hola@jheslyromero.com</p>
+                    <p><strong>Horario:</strong><br>Lun - Sáb: 9:00 - 19:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2025 Jhesly Romero Beauty Salon. Todos los derechos reservados.</p>
+                <p>Hecho con <span class="heart">♥</span> para ti</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/937007370?text=Hola!%20Me%20gustaría%20agendar%20una%20cita%20en%20Jhesly%20Romero%20Beauty%20Salon" 
+       target="_blank" 
+       class="whatsapp-btn"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" class="whatsapp-icon">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">¡Escríbenos por WhatsApp!</span>
+    </a>
+
+    <!-- MOBILE BOOK BUTTON -->
+    <div class="mobile-book-btn">
+        <a href="#booking" class="btn-primary btn-full">
+            <i data-lucide="calendar-days"></i>
+            Reservar Cita
+        </a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
