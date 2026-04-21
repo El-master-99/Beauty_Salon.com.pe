@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jhesly Romero Beauty Salon - Todos nuestros servicios de belleza en Huancayo: cabello, uñas, maquillaje, tratamientos faciales y paquetes especiales">
+    <meta name="keywords" content="salon de belleza huancayo, servicios belleza, manicure, tinte, maquillaje, novias, quinceañera">
+    <title>Servicios | Jhesly Romero Beauty Salon</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="servicios.css">
+</head>
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-links-left">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link active">Servicios</a>
+            </div>
+            
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <i data-lucide="scissors"></i>
+                </div>
+                <span class="logo-text">Jhesly Romero</span>
+            </a>
+            
+            <div class="nav-links-right">
+                <a href="index.html#products" class="nav-link">Productos</a>
+                <a href="index.html#gallery" class="nav-link">Galería</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+            </div>
+            
+            <a href="index.html#booking" class="btn-primary nav-btn">Reservar</a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">Inicio</a>
+        <a href="servicios.html" class="mobile-link">Servicios</a>
+        <a href="index.html#products" class="mobile-link">Productos</a>
+        <a href="index.html#gallery" class="mobile-link">Galería</a>
+        <a href="#contact" class="mobile-link">Contacto</a>
+        <a href="index.html#booking" class="btn-primary mobile-btn">Reservar Cita</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="sparkles"></i>
+                    <span>Servicios de Salón de Belleza en Huancayo</span>
+                </div>
+                <h1 class="page-hero-title">Nuestros <span class="text-primary italic">Servicios</span></h1>
+                <p class="page-hero-desc">Descubre nuestra completa gama de servicios de belleza diseñados para realzar tu imagen. Calidad premium al mejor precio en Huancayo.</p>
+                
+                <!-- Filter tabs -->
+                <div class="filter-tabs" id="filterTabs">
+                    <button class="filter-tab active" data-filter="all">Todos</button>
+                    <button class="filter-tab" data-filter="cabello">Cabello</button>
+                    <button class="filter-tab" data-filter="unas">Uñas</button>
+                    <button class="filter-tab" data-filter="maquillaje">Maquillaje & Cejas</button>
+                    <button class="filter-tab" data-filter="facial">Facial & Spa</button>
+                    <button class="filter-tab" data-filter="pestanas">Pestañas & Cejas</button>
+                    <button class="filter-tab" data-filter="paquetes">Paquetes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="services-main">
+        <div class="container">
+
+            <!-- ====== CABELLO ====== -->
+            <section class="service-category" data-category="cabello" id="cabello">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="scissors"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Cabello</h2>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="scissors"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Corte Dama</h3>
+                            <p class="service-desc">Corte profesional adaptado a tu rostro y estilo personal.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 20</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="wind"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Corte + Cepillado</h3>
+                            <p class="service-desc">Corte profesional incluye cepillado con acabado brillante y sedoso.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 50</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Tinte Completo — Cabello Corto</h3>
+                            <p class="service-desc">Coloración completa con productos de alta calidad para cabellos cortos.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 100</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Tinte Completo — Cabello Largo</h3>
+                            <p class="service-desc">Coloración completa con productos de alta calidad para cabellos largos.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 200</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon popular-badge-wrap">
+                            <i data-lucide="sparkles"></i>
+                            <span class="popular-badge">Popular</span>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Mechas / Balayage</h3>
+                            <p class="service-desc">Técnica de coloración degradada para un efecto natural y luminoso.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 150 – S/ 269</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Botox Capilar</h3>
+                            <p class="service-desc">Tratamiento de recuperación profunda para cabello dañado, frizz y sin brillo.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 139 – S/ 190</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="align-left"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Laceado (Alisado)</h3>
+                            <p class="service-desc">Alisado profesional de larga duración para un cabello liso y manejable.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 169 – S/ 299</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== UÑAS ====== -->
+            <section class="service-category" data-category="unas" id="unas">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="hand"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Uñas</h2>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="hand"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Manicure Básica</h3>
+                            <p class="service-desc">Limado, cutículas, hidratación y esmalte a elección.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 15 – S/ 40</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="gem"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Manicure Gel</h3>
+                            <p class="service-desc">Esmalte en gel de larga duración con acabado brillante y resistente.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 39 – S/ 69</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon popular-badge-wrap">
+                            <i data-lucide="star"></i>
+                            <span class="popular-badge">Popular</span>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Uñas Acrílicas</h3>
+                            <p class="service-desc">Extensión de uñas en acrílico con la forma y longitud que prefieras.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 50 – S/ 100</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="palette"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Diseños Especiales</h3>
+                            <p class="service-desc">Arte y decoraciones personalizadas para uñas. Precio adicional sobre servicio base.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">+ S/ 10 – S/ 30</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== MAQUILLAJE Y CEJAS ====== -->
+            <section class="service-category" data-category="maquillaje" id="maquillaje">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="wand-2"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Maquillaje & Cejas</h2>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-icon popular-badge-wrap">
+                            <i data-lucide="sparkles"></i>
+                            <span class="popular-badge">Popular</span>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Maquillaje Social</h3>
+                            <p class="service-desc">Maquillaje profesional para eventos, reuniones y ocasiones especiales.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 80 – S/ 150</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="pencil"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Diseño de Cejas</h3>
+                            <p class="service-desc">Diseño y depilación de cejas para enmarcar tu mirada.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 10 – S/ 30</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Pestañas (1x1)</h3>
+                            <p class="service-desc">Extensión de pestañas pelo a pelo para mayor volumen y longitud natural.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 60 – S/ 120</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== FACIAL Y SPA ====== -->
+            <section class="service-category" data-category="facial" id="facial">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Tratamientos Faciales & Spa</h2>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="droplet"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Limpieza Facial</h3>
+                            <p class="service-desc">Limpieza profunda de poros, hidratación y tonificación de la piel.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 40 – S/ 100</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon popular-badge-wrap">
+                            <i data-lucide="award"></i>
+                            <span class="popular-badge">Completo</span>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Facial + Maquillaje + Peinado</h3>
+                            <p class="service-desc">Pack completo de tratamiento facial, maquillaje profesional y peinado para lucir radiante.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 240 – S/ 520</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="moon"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Masajes Relajantes</h3>
+                            <p class="service-desc">Masajes terapéuticos para aliviar tensiones y relajar cuerpo y mente.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">Desde S/ 100</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== PESTAÑAS Y CEJAS ====== -->
+            <section class="service-category" data-category="pestanas" id="pestanas">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="eye"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Servicios de Pestañas & Cejas</h2>
+                    </div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="arrow-up"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Lifting de Pestañas + Efecto Rímel</h3>
+                            <p class="service-desc">Eleva y curva tus pestañas naturales con efecto de mayor longitud tipo rímel. Incluye lifting, tinte e hidratación.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 70</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Pestañas Punto a Punto</h3>
+                            <p class="service-desc">Aplicación por zonas para un efecto natural y rápido. Ideal para eventos o uso diario.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 45</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon popular-badge-wrap">
+                            <i data-lucide="crown"></i>
+                            <span class="popular-badge">Popular</span>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Extensiones de Pestañas 1x1 (Clásicas)</h3>
+                            <p class="service-desc">Colocación pelo a pelo para mayor volumen y longitud. Duración de 2 a 3 semanas.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 100</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Extensiones Volumen (Premium)</h3>
+                            <p class="service-desc">Efecto más lleno y glamuroso con técnica de volumen ruso o híbrido.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 120</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Extensiones Tecnológicas Anime (Premium)</h3>
+                            <p class="service-desc">Estilo único y glamuroso con técnica tecnológica de última generación.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 150</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Extensiones Hawaianas (Premium)</h3>
+                            <p class="service-desc">Efecto lleno y glamuroso con volumen ruso o híbrido de estilo hawaiano.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 120</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Laminado de Cejas</h3>
+                            <p class="service-desc">Alisa y fija las cejas para un efecto más ordenado, grueso y definido. Incluye diseño, fijación y nutrición.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 40</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="minus"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Planchado de Cejas</h3>
+                            <p class="service-desc">Técnica similar al laminado para ordenar y peinar las cejas de forma básica y efectiva.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 35</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card-icon">
+                            <i data-lucide="rotate-cw"></i>
+                        </div>
+                        <div class="service-card-body">
+                            <h3 class="service-name">Rizado Permanente de Pestañas</h3>
+                            <p class="service-desc">Curvatura duradera de pestañas naturales sin necesidad de maquillaje diario.</p>
+                        </div>
+                        <div class="service-card-footer">
+                            <span class="service-price">S/ 40</span>
+                            <a href="index.html#booking" class="btn-book">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ====== PAQUETES ====== -->
+            <section class="service-category" data-category="paquetes" id="paquetes">
+                <div class="category-header">
+                    <div class="category-icon-wrap">
+                        <i data-lucide="gift"></i>
+                    </div>
+                    <div>
+                        <span class="section-label">Categoría</span>
+                        <h2 class="category-title">Paquetes Especiales</h2>
+                    </div>
+                </div>
+
+                <div class="packages-grid">
+
+                    <!-- Pack Básico Novia -->
+                    <div class="package-card package-basic">
+                        <div class="package-header">
+                            <div class="package-emoji">💍</div>
+                            <div>
+                                <span class="package-label">Paquete</span>
+                                <h3 class="package-name">Pack Básico Novia</h3>
+                            </div>
+                        </div>
+                        <ul class="package-includes">
+                            <li><i data-lucide="check"></i> Maquillaje profesional</li>
+                            <li><i data-lucide="check"></i> Peinado especial</li>
+                            <li><i data-lucide="check"></i> Uñas acrílicas</li>
+                        </ul>
+                        <div class="package-footer">
+                            <span class="package-price">S/ 299</span>
+                            <a href="index.html#booking" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+
+                    <!-- Luxury Bride -->
+                    <div class="package-card package-luxury">
+                        <div class="package-badge-top">✨ Más completo</div>
+                        <div class="package-header">
+                            <div class="package-emoji">💎</div>
+                            <div>
+                                <span class="package-label">Paquete Premium</span>
+                                <h3 class="package-name">Luxury Bride</h3>
+                                <p class="package-subtitle">Para novias que merecen lo mejor</p>
+                            </div>
+                        </div>
+                        <div class="package-section-title"><i data-lucide="gem"></i> Incluye</div>
+                        <ul class="package-includes">
+                            <li><i data-lucide="check"></i> Prueba de maquillaje + prueba de peinado</li>
+                            <li><i data-lucide="check"></i> Limpieza facial profunda</li>
+                            <li><i data-lucide="check"></i> Maquillaje profesional HD (larga duración)</li>
+                            <li><i data-lucide="check"></i> Peinado (ondas, recogido o semirecogido)</li>
+                            <li><i data-lucide="check"></i> Colocación de velo y accesorios</li>
+                            <li><i data-lucide="check"></i> Diseño de cejas</li>
+                            <li><i data-lucide="check"></i> Pestañas postizas</li>
+                            <li><i data-lucide="check"></i> Retoque básico antes del evento</li>
+                        </ul>
+                        <div class="package-bonus">
+                            <i data-lucide="gift"></i>
+                            <strong>Bonus:</strong> Asesoría de imagen previa
+                        </div>
+                        <div class="package-footer">
+                            <span class="package-price">S/ 650</span>
+                            <a href="index.html#booking" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+
+                    <!-- Princess 15 -->
+                    <div class="package-card package-princess">
+                        <div class="package-badge-top">👸 Especial</div>
+                        <div class="package-header">
+                            <div class="package-emoji">✨</div>
+                            <div>
+                                <span class="package-label">Paquete Quinceañera</span>
+                                <h3 class="package-name">Princess 15</h3>
+                                <p class="package-subtitle">Tu noche más especial</p>
+                            </div>
+                        </div>
+                        <div class="package-section-title"><i data-lucide="gem"></i> Incluye</div>
+                        <ul class="package-includes">
+                            <li><i data-lucide="check"></i> Limpieza facial básica</li>
+                            <li><i data-lucide="check"></i> Maquillaje social juvenil (glow natural)</li>
+                            <li><i data-lucide="check"></i> Peinado (ondas, trenzas o semirecogido)</li>
+                            <li><i data-lucide="check"></i> Pestañas postizas</li>
+                            <li><i data-lucide="check"></i> Diseño de cejas</li>
+                        </ul>
+                        <div class="package-bonus">
+                            <i data-lucide="gift"></i>
+                            <strong>Bonus:</strong> Asesoría de estilo
+                        </div>
+                        <div class="package-footer">
+                            <span class="package-price">S/ 350</span>
+                            <a href="index.html#booking" class="btn-primary">Reservar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <div class="cta-glow"></div>
+            <div class="hero-badge">
+                <i data-lucide="calendar"></i>
+                <span>¿Lista para transformarte?</span>
+            </div>
+            <h2 class="cta-title">Reserva tu cita <span class="italic text-primary">hoy mismo</span></h2>
+            <p class="cta-desc">Agenda tu visita y disfruta de una experiencia de belleza única en Huancayo. Te esperamos con los brazos abiertos.</p>
+            <div class="cta-buttons">
+                <a href="index.html#booking" class="btn-primary">Reservar Cita</a>
+                <a href="https://wa.me/937000000?text=Hola!%20Me%20gustaría%20consultar%20sobre%20los%20servicios" target="_blank" class="btn-secondary">
+                    <i data-lucide="message-circle"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contáctanos</span>
+                <h2 class="section-title">¿Tienes alguna <span class="italic">pregunta?</span></h2>
+                <p class="section-description">Estamos aquí para ayudarte. Contáctanos y te responderemos a la brevedad.</p>
+                <div class="decorative-line"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>Jr. Cajamarca 345, Centro</p>
+                                <span>Ciudad de Huancayo</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <p>+51 937007370</p>
+                                <span>WhatsApp disponible</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>jhesly@beautysalon.pe</p>
+                                <span>Respuesta en 24h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i data-lucide="clock"></i></div>
+                            <div>
+                                <strong>Horario</strong>
+                                <p>Lun - Sáb: 9:00 - 19:00</p>
+                                <span>Domingos cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.8489193132995!2d-75.20729067261601!3d-12.072206629251163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9651f55a8b31%3A0x7bcc0e1ffee0e469!2sJr.%20Cajamarca%20345%2C%20Huancayo%2012001!5e0!3m2!1ses!2spe!4v1770614748953!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label>Nombre *</label>
+                            <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" class="form-input" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-input" placeholder="+51 937007370">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Mensaje *</label>
+                            <textarea class="form-input form-textarea" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i data-lucide="scissors"></i></div>
+                        <div>
+                            <span class="logo-name">Jhesly Romero</span>
+                            <span class="logo-subtitle">Beauty Salon</span>
+                        </div>
+                    </div>
+                    <p>Tu destino de belleza donde transformamos tu imagen con servicios de alta calidad y productos premium.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-link">IG</a>
+                        <a href="https://facebook.com" target="_blank" class="social-link">FB</a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">TW</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#cabello">Cabello</a></li>
+                        <li><a href="#unas">Uñas</a></li>
+                        <li><a href="#maquillaje">Maquillaje</a></li>
+                        <li><a href="#facial">Facial & Spa</a></li>
+                        <li><a href="#paquetes">Paquetes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#gallery">Galería</a></li>
+                        <li><a href="index.html#products">Productos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><strong>Dirección:</strong><br>Jr. Cajamarca 345, Centro<br>Ciudad de Huancayo</p>
+                    <p><strong>Teléfono:</strong><br>+51 937007370</p>
+                    <p><strong>Email:</strong><br>jhesly@beautysalon.pe</p>
+                    <p><strong>Horario:</strong><br>Lun - Sáb: 9:00 - 19:00</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© 2025 Jhesly Romero Beauty Salon. Todos los derechos reservados.</p>
+                <p>Hecho con <span class="heart">♥</span> para ti</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/937000000?text=Hola!%20Me%20gustaría%20agendar%20una%20cita%20en%20Jhesly%20Romero%20Beauty%20Salon" 
+       target="_blank" 
+       class="whatsapp-btn"
+       aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" class="whatsapp-icon">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">¡Escríbenos por WhatsApp!</span>
+    </a>
+
+    <!-- MOBILE BOOK BUTTON -->
+    <div class="mobile-book-btn">
+        <a href="index.html#booking" class="btn-primary btn-full">Reservar Cita</a>
+    </div>
+
+    <script src="servicios.js"></script>
+</body>
+</html>
